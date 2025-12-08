@@ -1,0 +1,29 @@
+body{
+    margin:0;
+}
+
+#navigation nav {
+    width: 84;
+    height: 31;
+    opacity: 1;
+    top: 25px;
+    left: 98px;
+
+}
+
+#navigation {
+    background-color: #152237;
+    display: flex;
+}
+
+.connexion {
+    background-color: #FFFFFF;
+    color:#152237;
+    border-radius: 4px;
+}
+
+.inscription{
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color:#152237;
+    border-radius: 4px;
+}
