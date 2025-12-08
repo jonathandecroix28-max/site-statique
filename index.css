@@ -6,9 +6,17 @@ body{
   font-style: normal;
 }
 
-#navigation nav, #navigation img {
+header {
+    height: 80px;
+    background-color: #152237;
+}
+
+.logo img {
     width: 84px;
     height: 31px;
+    margin-top: 25px;
+    margin-left: 98px;
+    margin-bottom: 24px;
 }
 
 h1 {
@@ -25,10 +33,6 @@ h1, h2, h3 {
     height: 24px;
 }
 
-#navigation img {
-    padding: 20px;
-    margin: 5px;
-}
 
 #bannière {    
     background-image:linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url("ressources/bg-header.png");
@@ -38,20 +42,28 @@ h1, h2, h3 {
 }
 
 
-#navigation .connexion {
+header .connexion {
     font-size: 15px;
     width: 130px;
     height: 40px;
-    margin-top: 20px;
-    margin-left: 1300px;
+    top: 20px;
+    left: 1300px;
 }
-#navigation .inscription {
+header .inscription {
     font-size: 15px;
     width: 130px;
     height: 40px;
-    margin-top: 20px;
-    margin-left: 1449px;
+    top: 20px;
+    left: 1449px;
+}
 
+#bouton-head{
+    display: flex;
+    gap: 19px;
+}
+
+#champs-head {
+    display:flex
 
 }
 
@@ -67,16 +79,16 @@ border-width: 1px;
 
 
 #navigation {
-    background-color: #152237;
+   
     display: flex;
+    flex-direction: row;
     width: 1680px;
     height: 80px;
 }
 
 #navigation label {
 font-size: 15px;
-margin-top: 31px;
-margin-left: 350px;
+
 }
 
 .connexion {
