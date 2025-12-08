@@ -6,6 +6,9 @@
     <title>Kilvio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="navigation">
@@ -14,10 +17,14 @@
              <img src="ressources/logo.png" alt="logo Kilvio">
            </a>
         </nav>
-        <label for="search-bar">Les formations</label>
-        <input type="search" id="search-bar" name="search-bar">
-        <button class="connexion">Connexion</button>
-        <button class="inscription">Inscription</button>
+        <div id="champs-head">
+           <label for="search-bar">Les formations</label>
+           <input type="search" id="search-bar" name="search-bar">
+        </div>  
+       <div id="bouton-head">
+            <button class="connexion">Connexion</button>
+            <button class="inscription">Inscription</button>
+       </div>
     </header>
 
     <main>
@@ -153,7 +160,7 @@
 
         <section id="avis">
             <h2>AVIS CLIENTS</h2>
-            <div>
+            <div class="client">
                 <img src="ressources/juliette.png" alt="juliette">
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
@@ -164,7 +171,7 @@
                 </div>
                 <p>J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
             </div>
-            <div>
+            <div class="client">
                 <img src="ressources/camille.png" alt="camille">
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
@@ -178,17 +185,17 @@
         </section>
 
         <section id="avantages">
-            <h2>LES AVANTAGES KLIVIO</h2>
-            <ul>
-                <li>Suivi de sa progression</li>
-                <li>Exercices et QCM pour la mise en pratique</li>
-                <li>Possibilité de télécharger/imprimer les formations</li>
-                <li>Contenu qualitatif et vérifié</li>
-                <li>Suivi en autonomie, 24h/24, 7j/7</li>
-                <li>Espaces d’échanges dédiés pour poser ses questions sur les formations</li>
-            </ul>
-            <img src="ressources/avantages.png" alt="avantages">
-        </section>
+    <h2>LES AVANTAGES KLIVIO</h2>
+    <ul class="liste-avantages">
+        <li><i class="fa-solid fa-arrow-trend-up"></i> Suivi de sa progression</li>
+        <li><i class="fa-solid fa-pen"></i> Exercices et QCM pour la mise en pratique</li>
+        <li><i class="fa-solid fa-download"></i> Possibilité de télécharger/imprimer les formations</li>
+        <li><i class="fa-regular fa-star"></i> Contenu qualitatif et vérifié</li>
+        <li><i class="fa-solid fa-clock-rotate-left"></i> Suivi en autonomie, 24h/24, 7j/7</li>
+        <li><i class="fa-regular fa-comments"></i> Espaces d’échanges dédiés</li>
+    </ul>
+    <img src="ressources/avantages.png" alt="avantages">
+</section>
 
         <section>
             <img src="ressources/become-author.png" alt="Devenir auteur">
