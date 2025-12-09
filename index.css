@@ -1,9 +1,11 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 header {
@@ -12,69 +14,83 @@ header {
     height: 7.62vh;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0 5.83vw;
-    box-sizing: border-box;
     position: relative; 
 }
 
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
+    height: 2.95vh; 
     width: auto;
-    height: 2.95vh;
     display: block;
 }
 
 
 #champs-head {
-    display: flex;
-    align-items: center;
-    gap: 1.19vw; 
-
+ 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
+    display: flex;
+    align-items: center;
+    gap: 1.19vw; 
 }
 
 #champs-head label {
-    line-height: 100%;
     font-size: 0.89vw;
-    letter-spacing: -0.015em;
     font-weight: 500;
     color: #FFFFFF;
     white-space: nowrap;
     cursor: pointer;
-   
 }
 
 input[type="search"] {
     width: 23.81vw;
-    height: 3.81vh;
-    border-radius: 0.24vw;
+    height: 3.81vh; 
+    border-radius: 4px; 
     border: 1px solid #ffffff;
     background-color: #1e2c41;
     color: white;
-    padding-left: 0.89vw;
+    padding-left: 15px;
+    font-size: 0.89vw;
+    outline: none;
 }
+
 
 #bouton-head {
     display: flex;
     align-items: center;
-    gap: 1.13vw; 
+    gap: 1.13vw;
 }
 
-
-header .connexion, header .inscription {
-    font-size: 0.89vw;
-    width: 7.74vw;
-    height: 3.81vh;
-    display: flex;             
-    justify-content: center; 
-    align-items: center;       
+.connexion, .inscription {
+    font-size: 0.89vw; 
+    width: 7.74vw;     
+    height: 3.81vh;   
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
-    border: none;             
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
 }
 
+.connexion {
+    background-color: #FFFFFF;
+    color: #152237;
+}
+
+.inscription {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color: #152237;
+}
 
 .connexion {
     background-color: #FFFFFF;
@@ -88,7 +104,7 @@ header .connexion, header .inscription {
     border-radius: 0.36vw;
 }
 
-
+/*
 h1 {
     font-size: 2.98vw;
 }
@@ -109,7 +125,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
 }
-
+/*
 .client img {
     clip-path: circle();
 }
@@ -131,4 +147,4 @@ h1, h2, h3 {
     color: #44DD8A;
     font-size: 1.2rem;
     margin-right: 0.60vw;
-}
+} */
