@@ -19,7 +19,6 @@
         </div>
         <span>Les formations</span>
         <div id="champs-head">
-            
             <input type="search" placeholder="Recherche">
         </div>
 
@@ -37,12 +36,21 @@
         </section>
 
         <section id="les-formations-populaires">
-            <h2>Les formations populaires</h2>
+            <h2 id="title">Les formations populaires</h2>
+          <div id="les-formation">
             
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Parler en public</h3>
-                <p>Sonia Levèvre | Coach prise de parole</p>
+                <p class="personne">Sonia Levèvre | Coach prise de parole</p>
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -55,22 +63,38 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Gérer le stress</h3>
-                <p>Lucie Garnier | Formatrice</p>
+                <p class="personne">Lucie Garnier | Formatrice</p>
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star yellow"></i>
                 </div>
                 <p>Apprenez à rester serein face aux défis</p>
             </div>
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Travailler en équipe</h3>
-                <p>David Moreau | Expert</p>
+                <p class="personne">David Moreau | Expert</p>
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -83,18 +107,26 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Gérer son temps</h3>
-                <p>Claire Dumas | Coach organisation</p>
+                <p class="personne">Claire Dumas | Coach organisation</p>
                 <div class="rating-box">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star yellow"></i>
                 </div>
                 <p>Optimisez vos journées et gagnez en efficacité</p>
             </div>
-
+          </div>
             <button id="bouton-formation">Voir plus de formations</button>
         </section>
 
@@ -103,6 +135,14 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Mieux communiquer</h3>
                 <p>Julien Martel | Coach en comm.</p>
                 <div class="rating-box">
@@ -117,6 +157,14 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Maîtriser ses émotions</h3>
                 <p>Ameli Benali | Psy. du travail</p>
                 <div class="rating-box">
@@ -131,6 +179,14 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Résoudre les problèmes</h3>
                 <p>Thomas Rivière | Expert</p>
                 <div class="rating-box">
@@ -145,6 +201,14 @@
 
             <div class="formation">
                 <img src="ressources/img-course.png" alt="fond-vert">
+                <div class="prix">
+                   <div class="nv-prix">
+                        <p>15,99€</p>
+                   </div>
+                   <div class="an-prix">
+                        <p>60€</p>
+                   </div>
+                </div>
                 <h3>Leadership positif</h3>
                 <p>Marc Nguyen | Consultant</p>
                 <div class="rating-box">
@@ -187,17 +251,17 @@
         </section>
 
         <section id="avantages">
-    <h2>LES AVANTAGES KLIVIO</h2>
-    <ul class="liste-avantages">
-        <li><i class="fa-solid fa-arrow-trend-up"></i> Suivi de sa progression</li>
-        <li><i class="fa-solid fa-pen"></i> Exercices et QCM pour la mise en pratique</li>
-        <li><i class="fa-solid fa-download"></i> Possibilité de télécharger/imprimer les formations</li>
-        <li><i class="fa-regular fa-star"></i> Contenu qualitatif et vérifié</li>
-        <li><i class="fa-solid fa-clock-rotate-left"></i> Suivi en autonomie, 24h/24, 7j/7</li>
-        <li><i class="fa-regular fa-comments"></i> Espaces d’échanges dédiés</li>
-    </ul>
-    <img src="ressources/avantages.png" alt="avantages">
-</section>
+            <h2>LES AVANTAGES KLIVIO</h2>
+            <ul class="liste-avantages">
+                <li><i class="fa-solid fa-arrow-trend-up"></i> Suivi de sa progression</li>
+                <li><i class="fa-solid fa-pen"></i> Exercices et QCM pour la mise en pratique</li>
+                <li><i class="fa-solid fa-download"></i> Possibilité de télécharger/imprimer les formations</li>
+                <li><i class="fa-regular fa-star"></i> Contenu qualitatif et vérifié</li>
+                <li><i class="fa-solid fa-clock-rotate-left"></i> Suivi en autonomie, 24h/24, 7j/7</li>
+                <li><i class="fa-regular fa-comments"></i> Espaces d’échanges dédiés</li>
+            </ul>
+            <img src="ressources/avantages.png" alt="avantages">
+        </section>
 
         <section>
             <img src="ressources/become-author.png" alt="Devenir auteur">

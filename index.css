@@ -118,7 +118,7 @@ h1, h2, h3 {
 #bannière h1 {
     padding: 0;
     margin: 0;
-    font-size: 48px;
+    font-size: clamp(24px, 4vw, 48px);
     font-weight: 800;
     height: 59px;
     font-style: bold;
@@ -132,7 +132,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     color:#000000;
     height:24px;
-    font-size: 20px;
+    font-size: clamp(10px, 2vw,20px);
     line-height: 100%;
     letter-spacing: -1.5%;
     margin-top: 8px;
@@ -155,6 +155,81 @@ h1, h2, h3 {
     border: 1px solid none;
     border-radius: 6px;
 }
+/* ******************************************************************************************************/
+
+#les-formations-populaires {
+    margin-top: 30px;
+    padding-left: 100px; 
+    padding-right: 100px; 
+}
+
+#title {
+    margin-left: 0; 
+    margin-bottom: 34px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 72px;
+    color: #152237;
+}
+
+#les-formation {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 30px;       
+    margin-left: 0;
+    margin-right: 0;
+}
+.formation {
+    width: 307px;
+    padding: 15px;
+    position: relative;
+}
+
+.formation img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.yellow {
+    color: #FFC7004D;
+
+}
+.prix {
+    position: absolute; 
+    top: auto;
+    bottom: 25px;
+    right: 25px; 
+    bottom: 150px;
+    background-color: #152237;
+    border-radius: 93px;
+    width: fit-content;
+    padding: 5px 15px;  
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+    gap: 7px;
+    z-index: 2; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.personne {
+font-weight: 400;
+font-size: 16px;
+margin-trim: none;
+line-height: 25px;
+letter-spacing: 0%;
+
+}
+.nv-prix p { color: white; 
+            margin: 0; 
+            font-weight: bold; 
+            font-size: 20px;}
+.an-prix p { 
+     color: #888; 
+     text-decoration: line-through; 
+     font-size: 10px;
+     margin: 0;
+     }
 
 .client img {
     clip-path: circle();
