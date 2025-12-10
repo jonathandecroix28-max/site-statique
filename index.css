@@ -268,6 +268,20 @@ letter-spacing: 0%;
     height: 632px;
 
 }
+#les-formations-récentes .prix {
+       background-color: #ffffff;
+}
+#les-formations-récentes .nv-prix p{ color: #152237; 
+            margin: 0; 
+            font-weight: bold; 
+            font-size: 20px;}
+
+#les-formations-récentes .an-prix p { 
+     color: #152237; 
+     text-decoration: line-through; 
+     font-size: 10px;
+     margin: 0;
+     } 
 
 #les-formations-récentes p{
     color:#ffffff;
@@ -524,7 +538,7 @@ justify-content: center;
 }
 
 textarea {
-    width: 1335.9188232421875px;
+width: 1335.9188232421875px;
 height: 194.63880920410156px;
 color: #ffffff;
 background-color: #152237;
@@ -546,7 +560,6 @@ background-color: #152237;
     height: 45.30121994018555px;
     color: #ffffff;
     background-color: #152237;
-
 
 }
 
@@ -571,12 +584,15 @@ background-color: #152237;
     width: 1482px;
     height: 2px;
     background: #44DD8A;
+    border: none;
 }
 
 #ligne-bloc {
-    width: 100%;
+width: 100%;
 height: 18px;
 background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
+border:none;
+margin-top: 77px;
 }
 
 footer {
@@ -598,10 +614,87 @@ footer ul {
     
 }
 
-footer ul li {
-    text-decoration: dashed;
+footer ul a {
+    text-decoration: none;
+    color:#FFFFFF;
 }
 
 .fin {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+
+#my-form {
+    display: flex;
+    flex-direction: column;
+   
+    gap: 15px; 
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+#textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 57px;
+}
+
+#button-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+}
+
+#set {
+    margin-left: 172px;
+    margin-right: 172px;
+}
+
+#color {
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.fin img {
+    width: 243px;
+    height: 87px;
+}
+
+#image{display: flex;
+    flex-direction: column;
+justify-content: center;
+margin-left: 96px;}
+
+#list {
+    display: flex;
+    justify-content: center;
+    gap:65px;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:12px;
 }
