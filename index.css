@@ -607,8 +607,35 @@ padding-left: 18px;
     justify-content: center;
     align-items: center;
     text-align: justify;
-}
 
+
+}
+#avantages .liste h2 {
+width: 686px;
+height: 47px;
+   font-weight: 900;
+    font-style: Black;
+    font-size: 40px;
+
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+
+
+}
+#author .liste h2 {
+        font-weight: 900;
+    font-style: Black;
+    font-size: 40px;
+
+    line-height: 36px;
+    letter-spacing: -1.5%;
+    text-transform: uppercase;
+    width: 686px;
+height: 93px;
+
+
+}
 #ligne {
     width: 1482px;
     height: 2px;
@@ -642,6 +669,18 @@ footer ul {
     color: #FFFFFF;
     
 }
+
+#coordonnées ul li:nth-child(1){
+    list-style: url("ressources/localisation.svg");
+}
+#coordonnées ul li:nth-child(2){
+    list-style: url("ressources/telephone.svg");
+}
+#coordonnées ul li:nth-child(3){
+    list-style: url("ressources/email.svg");
+}
+
+
 
 footer ul a {
     text-decoration: none;
@@ -727,8 +766,6 @@ margin-left: 96px;}
 }
 
 .boutons {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap:12px;
 }
