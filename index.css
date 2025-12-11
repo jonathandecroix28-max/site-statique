@@ -72,6 +72,13 @@ input[type="search"] {
 
 }
 
+input[type="search"]::placeholder {
+
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: -1.5%;
+}
 
 
 #bouton-head {
@@ -542,7 +549,26 @@ width: 1335.9188232421875px;
 height: 194.63880920410156px;
 color: #ffffff;
 background-color: #152237;
+padding-left: 16px;
+padding-top: 15px;
+font-size: 15px;
 }
+
+textarea::placeholder {
+    color:#FFFFFF;
+
+    font-weight: 400;
+    font-size: 15px;
+
+    line-height: 24px;
+    letter-spacing: -1.5%;
+    
+
+}
+
+
+
+
 #contact hr {border: 1px solid #44DD8A;
 width: 350px;
 height: 0px;
@@ -553,6 +579,7 @@ width: 599px;
 height: 45.25298309326172px;
 color: #ffffff;
 background-color: #152237;
+padding-left: 18px;
 }
 
 #email {
@@ -560,6 +587,7 @@ background-color: #152237;
     height: 45.30121994018555px;
     color: #ffffff;
     background-color: #152237;
+    padding-left: 16px;
 
 }
 
@@ -627,6 +655,11 @@ footer ul a {
 
 }
 
+
+input::placeholder {
+    color:white;
+    
+}
 #contact h2 {
     text-align: center;
 }
