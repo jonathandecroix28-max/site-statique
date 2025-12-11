@@ -39,7 +39,9 @@ header {
     gap: 1.19vw; 
 }
 
-
+#mobile {
+    display: none;
+}
 span {
     font-size: 15px;
     font-weight: 500;
@@ -427,6 +429,7 @@ letter-spacing: 0%;
 #avantages img{
  width: 727px;
  height: 472px;
+ 
 }
 
 #avantages ul {
@@ -476,22 +479,25 @@ justify-content: center;
 }
 #author ul li {
     display: flex;       
-    align-items: center;  
+    align-items: flex-start; 
     gap: 15px;           
-          
+    margin-bottom: 15px; 
 }
-#author i{
+#author i {
     color: white;     
     font-size: 24px;   
-    margin-bottom: 30px;  
     width: 30px;
     height: 30px;
+    flex-shrink: 0; 
+    margin-top: 4px; 
+    margin-bottom: 0; 
 }
-
 
 #author img {
     width: 729px;
     height: 487px;
+    width: 729;
+
 }
 
 #à-propos {
@@ -641,6 +647,7 @@ height: 93px;
     height: 2px;
     background: #44DD8A;
     border: none;
+    margin-top: 96px;
 }
 
 #ligne-bloc {
@@ -694,6 +701,7 @@ footer ul a {
 
 
 }
+
 
 
 input::placeholder {
@@ -757,13 +765,17 @@ input::placeholder {
 #image{display: flex;
     flex-direction: column;
 justify-content: center;
-margin-left: 96px;}
+margin-left: 96px;
+
+;}
 
 #list {
     display: flex;
     justify-content: center;
     gap:65px;
 }
+
+
 
 .boutons {
     justify-content: center;
@@ -774,4 +786,55 @@ margin-left: 96px;}
     display: flex;
     flex-direction: column;
     margin-right: 102px;
+}
+
+button {
+    border: none;
+}
+
+#first-line {
+    margin-bottom: 55px;
+}
+
+#contact h2{
+margin-top: 60px;
+    margin-bottom: 39px;
+    font-family: Montserrat;
+font-weight: 900;
+font-style: Black;
+font-size: 40px;
+line-height: 36px;
+letter-spacing: -1.5%;
+text-transform: uppercase;
+
+
+
+}
+
+@media screen and (max-width: 393px) {
+    #champs-head {
+        display: none;
+    }
+
+    span {
+        display: none;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    #bouton-head {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+   #avantages, #author, #à-propos {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
