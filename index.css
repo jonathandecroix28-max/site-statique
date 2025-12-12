@@ -559,6 +559,8 @@ background-color: #152237;
 padding-left: 16px;
 padding-top: 15px;
 font-size: 15px;
+    margin-top: 57px;
+    border: none;
 }
 
 textarea::placeholder {
@@ -574,8 +576,6 @@ textarea::placeholder {
 }
 
 
-
-
 #contact hr {border: 1px solid #44DD8A;
 width: 350px;
 height: 0px;
@@ -587,6 +587,7 @@ height: 45.25298309326172px;
 color: #ffffff;
 background-color: #152237;
 padding-left: 18px;
+border: none;
 }
 
 #email {
@@ -595,6 +596,7 @@ padding-left: 18px;
     color: #ffffff;
     background-color: #152237;
     padding-left: 16px;
+    border: none;
 
 }
 
@@ -609,12 +611,6 @@ padding-left: 18px;
 .liste {
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-
-
 }
 #avantages .liste h2 {
 width: 686px;
@@ -643,11 +639,13 @@ height: 93px;
 
 }
 #ligne {
-    width: 1482px;
+    width: 87%;
     height: 2px;
     background: #44DD8A;
     border: none;
     margin-top: 96px;
+  
+    
 }
 
 #ligne-bloc {
@@ -694,13 +692,7 @@ footer ul a {
     color:#FFFFFF;
 }
 
-.fin {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-
-}
 
 
 
@@ -716,7 +708,6 @@ input::placeholder {
 #my-form {
     display: flex;
     flex-direction: column;
-   
     gap: 15px; 
 }
 .input {
@@ -731,7 +722,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 57px;
+
 }
 
 #button-submit {
@@ -766,14 +757,9 @@ input::placeholder {
     flex-direction: column;
 justify-content: center;
 margin-left: 96px;
+margin-top: 109px;}
 
-;}
 
-#list {
-    display: flex;
-    justify-content: center;
-    gap:65px;
-}
 
 
 
@@ -786,6 +772,15 @@ margin-left: 96px;
     display: flex;
     flex-direction: column;
     margin-right: 102px;
+    font-family: Montserrat;
+font-weight: 500;
+font-size: 15px;
+
+line-height: 100%;
+letter-spacing: -1.5%;
+text-align: center;
+vertical-align: middle;
+
 }
 
 button {
@@ -810,6 +805,30 @@ text-transform: uppercase;
 
 
 }
+
+
+#block {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 102px;
+}
+
+#copy {
+    margin-left: 96px;
+}
+.fin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#list {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
 
 @media screen and (max-width: 393px) {
     #champs-head {
