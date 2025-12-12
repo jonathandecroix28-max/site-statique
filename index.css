@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    width: 100vw;
+    width: 1680px;
     font-size: 0.95vw; 
 }
 #mobile {
@@ -441,7 +441,7 @@ input[type="search"] {
 
 .input {
     display: flex;
-    gap: 1.5vw;
+    gap: 116px;
 }
 
 #name, #email {
@@ -454,16 +454,17 @@ input[type="search"] {
     font-size: 0.9vw;
 }
 
+
+
 textarea {
-    width: 73vw; 
+    width: 79vw; 
     height: 12vw;
     background-color: #152237;
     border: none;
     color: white;
     padding: 1vw;
     font-size: 0.9vw;
-    font-family: inherit;
-    resize: none;
+    margin-top: 3.318452381vw;
 }
 
 #submit {
