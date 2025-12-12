@@ -6,8 +6,9 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     width: 1680px;
-    font-size: 0.95vw; 
+    font-size: 0.95vw;
 }
+
 #mobile {
     display: none;
 }
@@ -20,9 +21,9 @@ body {
 
 
 button,
-input[type="button"], 
+input[type="button"],
 input[type="submit"] {
-    cursor: default; 
+    cursor: default;
 }
 
 
@@ -38,8 +39,13 @@ ul {
     list-style: none;
 }
 
-a { 
-    text-decoration: none; color: inherit; 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    font-size: 1.2vw;
 }
 
 /*
@@ -48,7 +54,7 @@ a {
 header {
     background-color: #152237;
     width: 100%;
-    height: 4.76vw; 
+    height: 4.76vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +62,7 @@ header {
 }
 
 .logo img {
-    width: 5vw; 
+    width: 5vw;
 }
 
 span {
@@ -68,14 +74,14 @@ span {
 }
 
 #champs-head {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
 input[type="search"] {
-    width: 28.39vw; 
-    height: 2.38vw; 
+    width: 28.39vw;
+    height: 2.38vw;
     border-radius: 0.35vw;
     background-image: url("ressources/loupe.svg");
     background-repeat: no-repeat;
@@ -93,7 +99,8 @@ input[type="search"] {
     gap: 1.2vw;
 }
 
-.connexion, .inscription {
+.connexion,
+.inscription {
     font-size: 0.9vw;
     height: 2.38vw;
     padding: 0 1.5vw;
@@ -105,18 +112,25 @@ input[type="search"] {
     justify-content: center;
 }
 
-.connexion { background-color: #FFFFFF; color: #152237; }
-.inscription { background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%); color: #152237; }
+.connexion {
+    background-color: #FFFFFF;
+    color: #152237;
+}
+
+.inscription {
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    color: #152237;
+}
 
 /*
    Banniere
 */
-#bannière {    
+#bannière {
     background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url("ressources/bg-header.png");
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     width: 100%;
-    height: 26.85vw; 
+    height: 26.85vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +139,7 @@ input[type="search"] {
 }
 
 #bannière h1 {
-    font-size: 2.85vw; 
+    font-size: 2.85vw;
     font-weight: 800;
     text-transform: uppercase;
     color: #152237;
@@ -152,26 +166,33 @@ input[type="search"] {
 /*
    Formation
    */
-#les-formations-populaires, 
+#les-formations-populaires,
 #les-formations-récentes {
-    padding: 3vw 5.95vw; 
+    padding: 3vw 5.95vw;
     width: 100%;
 }
 
-#les-formations-récentes { 
-    background: #152237; 
-}
-#les-formations-récentes h2, #les-formations-récentes h3, #les-formations-récentes p { 
-    color: white;
- }
-#les-formations-récentes .nv-prix p, #les-formations-récentes .an-prix p { 
-    color: #152237; 
-}
-#les-formations-récentes .prix { 
-    background-color: white; 
+#les-formations-récentes {
+    background: #152237;
 }
 
-#title, #title2 {
+#les-formations-récentes h2,
+#les-formations-récentes h3,
+#les-formations-récentes p {
+    color: white;
+}
+
+#les-formations-récentes .nv-prix p,
+#les-formations-récentes .an-prix p {
+    color: #152237;
+}
+
+#les-formations-récentes .prix {
+    background-color: white;
+}
+
+#title,
+#title2 {
     font-size: 2.14vw;
     font-weight: 800;
     margin-bottom: 2vw;
@@ -179,11 +200,12 @@ input[type="search"] {
 }
 
 
-#les-formation, #les-formation2 {
+#les-formation,
+#les-formation2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1.78vw; 
+    gap: 1.78vw;
     margin-bottom: 3vw;
 }
 
@@ -211,17 +233,21 @@ input[type="search"] {
     align-items: center;
     justify-content: center;
     gap: 0.4vw;
-    box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.2);
+    box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.2);
 }
 
-.nv-prix p { 
-    color: white; margin: 0; font-weight: bold; 
-    font-size: 1.19vw; 
+.nv-prix p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.19vw;
 }
-.an-prix p { 
-    color: #ffffff; text-decoration: line-through; 
-    font-size: 0.6vw; 
-    margin: 0; 
+
+.an-prix p {
+    color: #ffffff;
+    text-decoration: line-through;
+    font-size: 0.6vw;
+    margin: 0;
 }
 
 
@@ -243,11 +269,20 @@ input[type="search"] {
     font-size: 0.8vw;
     color: #FFC700;
 }
-.yellow { color: #FFC7004D; }
+
+.yellow {
+    color: #FFC7004D;
+}
 
 
-#button, #button2 { display: flex; justify-content: center; }
-#bouton-formation, #bouton-formation2 {
+#button,
+#button2 {
+    display: flex;
+    justify-content: center;
+}
+
+#bouton-formation,
+#bouton-formation2 {
     width: 13.39vw;
     height: 2.38vw;
     border-radius: 0.35vw;
@@ -256,8 +291,16 @@ input[type="search"] {
     border: none;
 
 }
-#bouton-formation { background: #152237; color: white; }
-#bouton-formation2 { background: white; color: #152237; }
+
+#bouton-formation {
+    background: #152237;
+    color: white;
+}
+
+#bouton-formation2 {
+    background: white;
+    color: #152237;
+}
 
 
 /*
@@ -271,7 +314,7 @@ input[type="search"] {
 }
 
 #avis h2 {
-    font-size: 2.14vw; 
+    font-size: 2.14vw;
     font-weight: 800;
     margin-bottom: 3vw;
     color: #152237;
@@ -284,7 +327,8 @@ input[type="search"] {
     width: 100%;
 }
 
-#client1, #client2 {
+#client1,
+#client2 {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -299,7 +343,8 @@ input[type="search"] {
     margin-bottom: 1vw;
 }
 
-#client1 h3, #client2 h3 {
+#client1 h3,
+#client2 h3 {
     font-size: 1.4vw;
     margin: 0 0 0.5vw 0;
 }
@@ -308,7 +353,8 @@ input[type="search"] {
 /*
    SECTION AUTEUR (Vert) & AVANTAGES
    */
-#author, #avantages {
+#author,
+#avantages {
     width: 100%;
     min-height: 38.15vw;
     display: flex;
@@ -318,18 +364,23 @@ input[type="search"] {
     gap: 5vw;
 }
 
-#author { 
-    background: #44DD8A; 
+#author {
+    background: #44DD8A;
 }
-#avantages { 
+
+#avantages {
     background-color: #F5F5F5;
 }
-.author-img-wrapper, #avantages img {
+
+.author-img-wrapper,
+#avantages img {
     width: 43.4vw;
     height: auto;
 }
 
-.author-img-wrapper img { width: 100%; }
+.author-img-wrapper img {
+    width: 100%;
+}
 
 
 .liste {
@@ -337,7 +388,8 @@ input[type="search"] {
     color: #152237;
 }
 
-#author h2, #avantages h2 {
+#author h2,
+#avantages h2 {
     font-size: 2.38vw;
     font-weight: 900;
     text-transform: uppercase;
@@ -345,7 +397,8 @@ input[type="search"] {
     line-height: 1.1;
 }
 
-#author ul li, #avantages ul li {
+#author ul li,
+#avantages ul li {
     display: flex;
     align-items: flex-start;
     gap: 0.89vw;
@@ -355,15 +408,18 @@ input[type="search"] {
     font-weight: 500;
 }
 
-#author ul li svg, #avantages ul li i {
+#author ul li svg,
+#avantages ul li i {
     flex-shrink: 0;
     width: 1.78vw;
     height: 1.78vw;
     margin-top: 0.2vw;
 }
-#avantages ul li i { 
-    font-size: 1.78vw; color: #44DD8A;
- }
+
+#avantages ul li i {
+    font-size: 1.78vw;
+    color: #44DD8A;
+}
 
 
 /*
@@ -390,8 +446,9 @@ input[type="search"] {
     justify-content: center;
     align-items: center;
 }
-#logo2 img { 
-    width: 20vw; 
+
+#logo2 img {
+    width: 20vw;
 }
 
 #propos h2 {
@@ -444,7 +501,8 @@ input[type="search"] {
     gap: 116px;
 }
 
-#name, #email {
+#name,
+#email {
     width: 35.7vw;
     height: 2.68vw;
     background-color: #152237;
@@ -457,7 +515,7 @@ input[type="search"] {
 
 
 textarea {
-    width: 79vw; 
+    width: 79vw;
     height: 12vw;
     background-color: #152237;
     border: none;
@@ -475,7 +533,7 @@ textarea {
     border-radius: 0.35vw;
     font-weight: bold;
     font-size: 0.9vw;
-    color: #152237; 
+    color: #152237;
     margin-top: 2vw;
 }
 
@@ -508,12 +566,12 @@ footer {
 }
 
 #image {
-    width: 8.9vw; 
+    width: 8.9vw;
 }
 
 #list {
     display: flex;
-    gap: 4.76vw; 
+    gap: 4.76vw;
     margin-top: 0.5vw;
 }
 
@@ -530,20 +588,25 @@ footer ul li {
     line-height: 1.4;
     color: #DDDDDD;
 }
-#coordonnées ul li:nth-child(1){
+
+#coordonnées ul li:nth-child(1) {
     list-style: url("ressources/localisation.svg");
 }
-#coordonnées ul li:nth-child(2){
+
+#coordonnées ul li:nth-child(2) {
     list-style: url("ressources/telephone.svg");
 }
-#coordonnées ul li:nth-child(3){
+
+#coordonnées ul li:nth-child(3) {
     list-style: url("ressources/email.svg");
 }
+
 #coordonnées ul li {
     display: flex;
     align-items: flex-start;
     gap: 0.6vw;
 }
+
 #coordonnées ul li svg {
     width: 1.2vw;
     height: 1.2vw;
@@ -556,9 +619,10 @@ footer ul li {
     gap: 1vw;
     align-items: flex-end;
 }
+
 .boutons button {
     width: 7.73vw;
-    height: 2.38vw; 
+    height: 2.38vw;
     font-size: 0.9vw;
     border-radius: 0.3vw;
 }
@@ -587,8 +651,16 @@ footer ul li {
     align-items: center;
     gap: 1vw;
 }
-.icon-logo p { margin: 0; color: white; margin-right: 0.5vw; }
-.icon-logo img { width: 1.4vw; }
+
+.icon-logo p {
+    margin: 0;
+    color: white;
+    margin-right: 0.5vw;
+}
+
+.icon-logo img {
+    width: 1.4vw;
+}
 
 
 /*
@@ -596,83 +668,180 @@ footer ul li {
    */
 @media screen and (max-width: 394px) {
 
-    body { font-size: 14px; }
+    body {
+        font-size: 14px;
+    }
+
     #mobile {
         display: block;
     }
-    header { height: auto; padding: 15px; flex-direction: row; gap: 15px; }
-    .logo img { width: 120px; }
-    input[type="search"] { width: 100%; height: 40px; font-size: 14px; }
-    .connexion, .inscription { width: 100%; height: 40px; font-size: 14px; }
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    input[type="search"] {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .connexion,
+    .inscription {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
     #champs-head {
         display: none;
     }
+
     span {
         display: none
     }
+
     #bouton-head {
         display: none;
     }
-    #bannière { 
-        height: 300px; 
+
+    #bannière {
+        height: 300px;
     }
-    #bannière h1 { 
-    font-size: 32px;
+
+    #bannière h1 {
+        font-size: 32px;
     }
-    #bannière h2 { 
-    font-size: 20px;
+
+    #bannière h2 {
+        font-size: 20px;
     }
-    
-    #les-formation, #les-formation2 { 
+
+    #les-formation,
+    #les-formation2 {
         justify-content: center;
-     }
-    .formation {
-         width: 100%; max-width: 350px;
-         }
-    .formation h3 { 
-        font-size: 18px;
-     }
-    .prix { 
-        width: 120px; height: 30px; font-size: 16px; top: -15px;
-     }
-    .nv-prix p { 
-        font-size: 18px; 
     }
-    
-    #author, #avantages, #à-propos, #contact, .fin, #color {
+
+    .formation {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .formation h3 {
+        font-size: 18px;
+    }
+
+    .prix {
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        top: -15px;
+    }
+
+    .nv-prix p {
+        font-size: 18px;
+    }
+
+    #author,
+    #avantages,
+    #à-propos,
+    #contact,
+    .fin,
+    #color {
         flex-direction: column;
         padding: 40px 20px;
         gap: 30px;
     }
+
     #author {
-         flex-direction: column-reverse;
-         }
-    
-    .author-img-wrapper, #avantages img, .liste, #propos, #logo2, #my-form, .input, textarea, #submit {
+        flex-direction: column-reverse;
+    }
+
+    .author-img-wrapper,
+    #avantages img,
+    .liste,
+    #propos,
+    #logo2,
+    #my-form,
+    .input,
+    textarea,
+    #submit {
         width: 100%;
     }
-    
-    #author h2, #avantages h2, #contact h2, #propos h2 { 
-        font-size: 24px; 
+
+    #author h2,
+    #avantages h2,
+    #contact h2,
+    #propos h2 {
+        font-size: 24px;
     }
-    #author ul li, #avantages ul li { 
-        font-size: 14px; gap: 10px; 
+
+    #author ul li,
+    #avantages ul li {
+        font-size: 14px;
+        gap: 10px;
     }
-    #author ul li svg, #avantages ul li i {
-         width: 24px; height: 24px; 
-        }
-    
-    .input { flex-direction: column; }
-    #name, #email { width: 100%; height: 45px; }
-    textarea { height: 150px; }
-    
-    #image { width: 150px; margin: 0 auto; }
-    #list { flex-direction: column; gap: 30px; text-align: center; }
-    #coordonnées ul li { justify-content: center; }
-    #coordonnées ul li svg { width: 18px; }
-    
-    .boutons { align-items: center; width: 100%; }
-    .boutons button { width: 100%; max-width: 300px; height: 45px; font-size: 16px; }
-    
-    #color { flex-direction: column-reverse; gap: 20px; }
+
+    #author ul li svg,
+    #avantages ul li i {
+        width: 24px;
+        height: 24px;
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    #name,
+    #email {
+        width: 100%;
+        height: 45px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    #image {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    #list {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    #coordonnées ul li {
+        justify-content: center;
+    }
+
+    #coordonnées ul li svg {
+        width: 18px;
+    }
+
+    .boutons {
+        align-items: center;
+        width: 100%;
+    }
+
+    .boutons button {
+        width: 100%;
+        max-width: 300px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #color {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
 }
