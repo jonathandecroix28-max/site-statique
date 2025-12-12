@@ -59,7 +59,7 @@ header {
     justify-content: space-between;
 
     /* J'ai mis à 0 pour que tu puisses monter/descendre le contenu */
-    padding: 0 0;
+    padding: 5.8vh 0;
     /* ⚠️ À TOI DE RÉGLER (Haut/Bas  Gauche/Droite) */
 }
 
