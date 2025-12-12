@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    width: 100%;
-    overflow-x: hidden;
+    width: 1680px;
+
     font-size: 0.95vw;
 }
 
@@ -57,14 +57,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     /* J'ai mis à 0 pour que tu puisses monter/descendre le contenu */
-    padding: 0 0; /* ⚠️ À TOI DE RÉGLER (Haut/Bas  Gauche/Droite) */
+    padding: 0 0;
+    /* ⚠️ À TOI DE RÉGLER (Haut/Bas  Gauche/Droite) */
 }
 
 .logo img {
-    width: 5vw; /* Si le logo est trop gros/petit, change ça aussi */
-    margin-left: 0; /* ⚠️ Marge à gauche si besoin */
+    width: 5vw;
+    /* Si le logo est trop gros/petit, change ça aussi */
+    margin-left: 0;
+    /* ⚠️ Marge à gauche si besoin */
     flex-shrink: 0;
 }
 
@@ -91,24 +94,28 @@ input[type="search"] {
     border: 1px solid #ffffff;
     background-color: #1e2c41;
     color: white;
-    
-    padding-left: 0; /* ⚠️ À régler pour décoller le texte du bord */
+
+    padding-left: 0;
+    /* ⚠️ À régler pour décoller le texte du bord */
     font-size: 0.9vw;
 }
 
 #bouton-head {
     display: flex;
-    gap: 0; /* ⚠️ Espace entre les boutons connexion/inscription */
-    margin-right: 0; /* ⚠️ Marge à droite globale du bloc boutons */
+    gap: 0;
+    /* ⚠️ Espace entre les boutons connexion/inscription */
+    margin-right: 0;
+    /* ⚠️ Marge à droite globale du bloc boutons */
 }
 
 .connexion,
 .inscription {
     font-size: 0.9vw;
     height: 2.38vw;
-    
-    padding: 0 0; /* ⚠️ Largeur intérieure des boutons */
-    
+
+    padding: 0 0;
+    /* ⚠️ Largeur intérieure des boutons */
+
     border-radius: 0.35vw;
     border: none;
     white-space: nowrap;
@@ -136,16 +143,19 @@ input[type="search"] {
     background-size: cover;
     background-position: center;
     width: 100%;
-    
+
     /* Note : J'ai enlevé le centrage automatique vertical pour que tu puisses utiliser le padding-top */
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: flex-start; /* Contenu collé en haut par défaut */
+    align-items: center;
+    justify-content: flex-start;
+    /* Contenu collé en haut par défaut */
 
-    height: 26.85vw; /* Vérifie si cette hauteur est bonne avec ton calque */
-    
-    padding-top: 0; /* ⚠️ C'est ICI qu'il faut augmenter pour descendre le texte */
+    height: 26.85vw;
+    /* Vérifie si cette hauteur est bonne avec ton calque */
+
+    padding-top: 0;
+    /* ⚠️ C'est ICI qu'il faut augmenter pour descendre le texte */
 }
 
 #bannière h1 {
@@ -153,18 +163,21 @@ input[type="search"] {
     font-weight: 800;
     text-transform: uppercase;
     color: #152237;
-    
-    margin-top: 0; 
-    margin-bottom: 0; /* ⚠️ Espace sous le gros titre */
+
+    margin-top: 0;
+    margin-bottom: 0;
+    /* ⚠️ Espace sous le gros titre */
 }
 
 #bannière h2 {
     font-size: 1.19vw;
     color: #000;
     text-transform: uppercase;
-    
-    margin-top: 0; /* ⚠️ Espace au dessus du sous-titre */
-    margin-bottom: 0; /* ⚠️ Espace sous le sous-titre */
+
+    margin-top: 0;
+    /* ⚠️ Espace au dessus du sous-titre */
+    margin-bottom: 0;
+    /* ⚠️ Espace sous le sous-titre */
 }
 
 #bannière button {
@@ -174,15 +187,17 @@ input[type="search"] {
     background-color: #ffffff;
     color: #152237;
     font-weight: 500;
-    
-    padding: 0 0; /* ⚠️ Taille du bouton "En savoir plus" */
+
+    padding: 0 0;
+    /* ⚠️ Taille du bouton "En savoir plus" */
 }
 
 /* --- FORMATIONS --- */
 #les-formations-populaires,
 #les-formations-récentes {
     width: 100%;
-    padding: 0 0; /* ⚠️ À régler (Haut/Bas Gauche/Droite) */
+    padding: 0 0;
+    /* ⚠️ À régler (Haut/Bas Gauche/Droite) */
 }
 
 #les-formations-récentes {
@@ -194,12 +209,19 @@ input[type="search"] {
 #les-formations-récentes p,
 #les-formations-récentes .nv-prix p,
 #les-formations-récentes .an-prix p {
-    color: white; /* ou gestion spécifique comme avant */
+    color: white;
+    /* ou gestion spécifique comme avant */
 }
+
 /* (Je remets les couleurs spécifiques pour les prix récents si besoin) */
 #les-formations-récentes .nv-prix p,
-#les-formations-récentes .an-prix p { color: #152237; }
-#les-formations-récentes .prix { background-color: white; }
+#les-formations-récentes .an-prix p {
+    color: #152237;
+}
+
+#les-formations-récentes .prix {
+    background-color: white;
+}
 
 
 #title,
@@ -207,9 +229,10 @@ input[type="search"] {
     font-size: 2.14vw;
     font-weight: 800;
     color: #152237;
-    
+
     margin-top: 0;
-    margin-bottom: 0; /* ⚠️ Espace sous le titre de section */
+    margin-bottom: 0;
+    /* ⚠️ Espace sous le titre de section */
 }
 
 #les-formation,
@@ -217,15 +240,17 @@ input[type="search"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    gap: 0; /* ⚠️ Espace entre les cartes */
+
+    gap: 0;
+    /* ⚠️ Espace entre les cartes */
     margin-bottom: 0;
 }
 
 .formation {
     width: 18.27vw;
     position: relative;
-    padding: 0; /* ⚠️ Espace intérieur de la carte */
+    padding: 0;
+    /* ⚠️ Espace intérieur de la carte */
 }
 
 .formation img {
@@ -235,7 +260,8 @@ input[type="search"] {
 
 .prix {
     position: relative;
-    top: -0.9vw; /* Ajuster si besoin */
+    top: -0.9vw;
+    /* Ajuster si besoin */
     left: 72%;
     transform: translateX(-50%);
     background-color: #152237;
@@ -266,7 +292,8 @@ input[type="search"] {
 .formation h3 {
     font-size: 1.2vw;
     color: #152237;
-    margin: 0; /* ⚠️ */
+    margin: 0;
+    /* ⚠️ */
 }
 
 .personne {
@@ -279,7 +306,8 @@ input[type="search"] {
     gap: 0.2vw;
     font-size: 0.8vw;
     color: #FFC700;
-    margin: 0; /* ⚠️ */
+    margin: 0;
+    /* ⚠️ */
 }
 
 .yellow {
@@ -302,8 +330,15 @@ input[type="search"] {
     border: none;
 }
 
-#bouton-formation { background: #152237; color: white; }
-#bouton-formation2 { background: white; color: #152237; }
+#bouton-formation {
+    background: #152237;
+    color: white;
+}
+
+#bouton-formation2 {
+    background: white;
+    color: #152237;
+}
 
 
 /* --- AVIS --- */
@@ -311,20 +346,23 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0; /* ⚠️ À régler */
+    padding: 0 0;
+    /* ⚠️ À régler */
 }
 
 #avis h2 {
     font-size: 2.14vw;
     font-weight: 800;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
     color: #152237;
 }
 
 .clients {
     display: flex;
     justify-content: center;
-    gap: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
     width: 100%;
 }
 
@@ -341,13 +379,15 @@ input[type="search"] {
     height: 8.27vw;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
 }
 
 #client1 h3,
 #client2 h3 {
     font-size: 1.4vw;
-    margin: 0; /* ⚠️ */
+    margin: 0;
+    /* ⚠️ */
 }
 
 /* --- AUTEUR & AVANTAGES --- */
@@ -358,20 +398,30 @@ input[type="search"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    padding: 0 0; /* ⚠️ À régler */
-    gap: 0; /* ⚠️ Ecart entre texte et image */
+
+    padding: 0 0;
+    /* ⚠️ À régler */
+    gap: 0;
+    /* ⚠️ Ecart entre texte et image */
 }
 
-#author { background: #44DD8A; }
-#avantages { background-color: #F5F5F5; }
+#author {
+    background: #44DD8A;
+}
+
+#avantages {
+    background-color: #F5F5F5;
+}
 
 .author-img-wrapper,
 #avantages img {
     width: 43.4vw;
     height: auto;
 }
-.author-img-wrapper img { width: 100%; }
+
+.author-img-wrapper img {
+    width: 100%;
+}
 
 .liste {
     width: 40vw;
@@ -383,7 +433,8 @@ input[type="search"] {
     font-size: 2.38vw;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
     line-height: 1.1;
 }
 
@@ -392,7 +443,8 @@ input[type="search"] {
     display: flex;
     align-items: flex-start;
     gap: 0.89vw;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
     font-size: 1.07vw;
     line-height: 1.5;
     font-weight: 500;
@@ -406,8 +458,14 @@ input[type="search"] {
     margin-top: 0.2vw;
 }
 
-#author i { color: #FFFFFF }
-#avantages ul li i { font-size: 1.78vw; color: #44DD8A; }
+#author i {
+    color: #FFFFFF
+}
+
+#avantages ul li i {
+    font-size: 1.78vw;
+    color: #44DD8A;
+}
 
 
 /* --- A PROPOS --- */
@@ -419,7 +477,8 @@ input[type="search"] {
 #propos {
     background: #F5F5F5;
     width: 50%;
-    padding: 0; /* ⚠️ */
+    padding: 0;
+    /* ⚠️ */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -433,25 +492,30 @@ input[type="search"] {
     align-items: center;
 }
 
-#logo2 img { width: 20vw; }
+#logo2 img {
+    width: 20vw;
+}
 
 #propos h2 {
     font-size: 2.38vw;
     font-weight: 900;
     text-transform: uppercase;
     color: #152237;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
 }
 
 #propos p {
     font-size: 1.07vw;
     line-height: 1.6;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
 }
 
 /* --- CONTACT --- */
 #contact {
-    padding: 0 0; /* ⚠️ */
+    padding: 0 0;
+    /* ⚠️ */
     text-align: center;
 }
 
@@ -460,13 +524,15 @@ input[type="search"] {
     font-weight: 900;
     text-transform: uppercase;
     color: #152237;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
 }
 
 #contact hr {
     width: 20.83vw;
     border: 1px solid #44DD8A;
-    margin: 0 auto; /* ⚠️ Centre mais sans marge verticale */
+    margin: 0 auto;
+    /* ⚠️ Centre mais sans marge verticale */
 }
 
 #my-form {
@@ -474,12 +540,14 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
 }
 
 .input {
     display: flex;
-    gap: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
     justify-content: center;
     width: 100%;
 }
@@ -491,7 +559,8 @@ input[type="search"] {
     background-color: #152237;
     border: none;
     color: white;
-    padding-left: 0; /* ⚠️ */
+    padding-left: 0;
+    /* ⚠️ */
     font-size: 0.9vw;
 }
 
@@ -501,9 +570,11 @@ textarea {
     background-color: #152237;
     border: none;
     color: white;
-    padding: 0; /* ⚠️ */
+    padding: 0;
+    /* ⚠️ */
     font-size: 0.9vw;
-    margin-top: 0; /* ⚠️ */
+    margin-top: 0;
+    /* ⚠️ */
 }
 
 #submit {
@@ -515,7 +586,8 @@ textarea {
     font-weight: bold;
     font-size: 0.9vw;
     color: #152237;
-    margin-top: 0; /* ⚠️ */
+    margin-top: 0;
+    /* ⚠️ */
 }
 
 /* --- FOOTER --- */
@@ -523,7 +595,8 @@ footer {
     background-color: #152237;
     width: 100%;
     color: white;
-    padding-bottom: 0; /* ⚠️ */
+    padding-bottom: 0;
+    /* ⚠️ */
 }
 
 #ligne-bloc {
@@ -531,35 +604,43 @@ footer {
     height: 0.5vw;
     background: linear-gradient(90deg, #44DD8A 0%, #15B7E2 100%);
     border: none;
-    margin: 0; /* ⚠️ */
+    margin: 0;
+    /* ⚠️ */
 }
 
 .fin {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 0; /* ⚠️ */
+    padding: 0 0;
+    /* ⚠️ */
     width: 100%;
 }
 
-#image { width: 14.5vw; }
+#image {
+    width: 14.5vw;
+}
 
 #list {
     display: flex;
-    gap: 0; /* ⚠️ */
-    margin-top: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
+    margin-top: 0;
+    /* ⚠️ */
 }
 
 footer h3 {
     font-size: 1.07vw;
     font-weight: 700;
-    margin: 0; /* ⚠️ */
+    margin: 0;
+    /* ⚠️ */
     color: #FFF;
 }
 
 footer ul li {
     font-size: 0.9vw;
-    margin-bottom: 0; /* ⚠️ */
+    margin-bottom: 0;
+    /* ⚠️ */
     line-height: 1.4;
     color: #DDDDDD;
 }
@@ -574,9 +655,18 @@ footer ul li {
     background-position: center;
     flex-shrink: 0;
 }
-#coordonnées ul li:nth-child(1)::before { background-image: url("ressources/localisation.svg"); }
-#coordonnées ul li:nth-child(2)::before { background-image: url("ressources/telephone.svg"); }
-#coordonnées ul li:nth-child(3)::before { background-image: url("ressources/email.svg"); }
+
+#coordonnées ul li:nth-child(1)::before {
+    background-image: url("ressources/localisation.svg");
+}
+
+#coordonnées ul li:nth-child(2)::before {
+    background-image: url("ressources/telephone.svg");
+}
+
+#coordonnées ul li:nth-child(3)::before {
+    background-image: url("ressources/email.svg");
+}
 
 #coordonnées ul li {
     display: flex;
@@ -587,7 +677,8 @@ footer ul li {
 .boutons {
     display: flex;
     flex-direction: column;
-    gap: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
     align-items: flex-end;
 }
 
@@ -603,14 +694,16 @@ footer ul li {
     height: 1px;
     background-color: #44DD8A;
     border: none;
-    margin: 0 auto; /* ⚠️ */
+    margin: 0 auto;
+    /* ⚠️ */
 }
 
 #color {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0; /* ⚠️ */
+    padding: 0 0;
+    /* ⚠️ */
     font-size: 0.8vw;
     color: #CCCCCC;
 }
@@ -618,16 +711,20 @@ footer ul li {
 .icon-logo {
     display: flex;
     align-items: center;
-    gap: 0; /* ⚠️ */
+    gap: 0;
+    /* ⚠️ */
 }
 
 .icon-logo p {
     margin: 0;
     color: white;
-    margin-right: 0; /* ⚠️ */
+    margin-right: 0;
+    /* ⚠️ */
 }
 
-.icon-logo img { width: 1.4vw; }
+.icon-logo img {
+    width: 1.4vw;
+}
 
 #block {
     display: flex;
@@ -640,66 +737,279 @@ footer ul li {
 */
 
 @media screen and (max-width: 1024px) {
-    body { font-size: 1.4vw; }
-    .formation { width: 48%; }
-    input[type="search"] { width: 25vw; }
-    .connexion, .inscription { padding: 0 2vw; }
+    body {
+        font-size: 1.4vw;
+    }
+
+    .formation {
+        width: 48%;
+    }
+
+    input[type="search"] {
+        width: 25vw;
+    }
+
+    .connexion,
+    .inscription {
+        padding: 0 2vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    body { font-size: 15px; }
-    h1, h2, h3 { line-height: 1.2; }
-    
-    header { padding: 15px 20px; }
-    .logo img { width: 120px; }
-    #mobile { display: block; font-size: 24px; color: white; }
-    #champs-head, #bouton-head, header span { display: none; }
-    
-    #bannière { height: auto; padding: 60px 20px; }
-    #bannière h1 { font-size: 28px; }
-    #bannière h2 { font-size: 16px; margin-bottom: 20px; }
-    #bannière button { padding: 12px 24px; font-size: 14px; border-radius: 5px; }
-    
-    #title, #title2, #avis h2, #author h2, #avantages h2, #contact h2, #propos h2 {
-        font-size: 24px; text-align: center; margin-bottom: 30px;
+    body {
+        font-size: 15px;
     }
-    
-    #les-formation, #les-formation2 { justify-content: center; gap: 30px; }
-    .formation { width: 100%; max-width: 400px; margin: 0 auto; background: #f9f9f9; border-radius: 10px; }
-    .prix { width: 100px; height: 30px; top: -15px; border-radius: 20px; }
-    .nv-prix p { font-size: 14px; }
-    .an-prix p { font-size: 10px; }
-    .formation h3 { font-size: 18px; margin-top: 15px; }
-    .personne { font-size: 14px; }
-    #bouton-formation, #bouton-formation2 { width: 100%; max-width: 300px; height: 45px; font-size: 16px; }
-    
-    .clients { flex-direction: column; align-items: center; gap: 40px; }
-    #client1, #client2 { width: 100%; align-items: center; text-align: center; }
-    #client1 h3, #client2 h3 { font-size: 18px; }
-    #avis img { width: 80px; height: 80px; }
-    
-    #author, #avantages, #à-propos { flex-direction: column; padding: 40px 20px; height: auto; }
-    #author { flex-direction: column-reverse; }
-    .author-img-wrapper, #avantages img, #logo2 { width: 100%; max-width: 350px; }
-    .liste, #propos, #logo2 { width: 100%; }
-    #logo2 img { width: 150px; }
-    #author ul li, #avantages ul li { font-size: 14px; margin-bottom: 15px; }
-    #author ul li svg, #avantages ul li i { width: 20px; height: 20px; font-size: 20px; }
-    #propos p { font-size: 14px; }
-    
-    .input { flex-direction: column; gap: 15px; }
-    #name, #email { width: 100%; height: 50px; font-size: 16px; }
-    textarea { width: 100%; height: 150px; margin-top: 15px; font-size: 16px; }
-    #submit { width: 100%; height: 50px; font-size: 16px; }
-    
-    .fin { flex-direction: column; align-items: center; text-align: center; gap: 40px; }
-    #image { width: 150px; margin: 0 auto; }
-    #list { flex-direction: column; width: 100%; gap: 30px; }
-    footer h3 { font-size: 18px; margin-bottom: 15px; }
-    footer ul li { font-size: 14px; justify-content: center; }
-    .boutons { align-items: center; width: 100%; }
-    .boutons button { width: 100%; max-width: 250px; height: 45px; font-size: 14px; }
-    #color { flex-direction: column-reverse; gap: 20px; text-align: center; padding-bottom: 20px; }
-    .icon-logo { margin-bottom: 10px; }
-    .icon-logo img { width: 20px; }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    #mobile {
+        display: block;
+        font-size: 24px;
+        color: white;
+    }
+
+    #champs-head,
+    #bouton-head,
+    header span {
+        display: none;
+    }
+
+    #bannière {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    #bannière h1 {
+        font-size: 28px;
+    }
+
+    #bannière h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #bannière button {
+        padding: 12px 24px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    #title,
+    #title2,
+    #avis h2,
+    #author h2,
+    #avantages h2,
+    #contact h2,
+    #propos h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #les-formation,
+    #les-formation2 {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .formation {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        background: #f9f9f9;
+        border-radius: 10px;
+    }
+
+    .prix {
+        width: 100px;
+        height: 30px;
+        top: -15px;
+        border-radius: 20px;
+    }
+
+    .nv-prix p {
+        font-size: 14px;
+    }
+
+    .an-prix p {
+        font-size: 10px;
+    }
+
+    .formation h3 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .personne {
+        font-size: 14px;
+    }
+
+    #bouton-formation,
+    #bouton-formation2 {
+        width: 100%;
+        max-width: 300px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .clients {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #client1,
+    #client2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #client1 h3,
+    #client2 h3 {
+        font-size: 18px;
+    }
+
+    #avis img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #author,
+    #avantages,
+    #à-propos {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    #author {
+        flex-direction: column-reverse;
+    }
+
+    .author-img-wrapper,
+    #avantages img,
+    #logo2 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .liste,
+    #propos,
+    #logo2 {
+        width: 100%;
+    }
+
+    #logo2 img {
+        width: 150px;
+    }
+
+    #author ul li,
+    #avantages ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    #author ul li svg,
+    #avantages ul li i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+
+    #propos p {
+        font-size: 14px;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #name,
+    #email {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    #submit {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .fin {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #image {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    #list {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    footer ul li {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .boutons {
+        align-items: center;
+        width: 100%;
+    }
+
+    .boutons button {
+        width: 100%;
+        max-width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    #color {
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .icon-logo {
+        margin-bottom: 10px;
+    }
+
+    .icon-logo img {
+        width: 20px;
+    }
 }
