@@ -901,7 +901,7 @@ footer ul li {
     #avantages img,
     #logo2 {
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
     }
 
     .liste-author i {
