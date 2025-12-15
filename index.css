@@ -5,7 +5,8 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    width: 1680px;
+    width: 100%;
+    max-width: 100vw;
     font-size: 0.95vw;
 }
 
@@ -48,9 +49,6 @@ i {
     font-size: 1.2vw;
 }
 
-/*
-   Header
-*/
 header {
     background-color: #152237;
     width: 100%;
@@ -58,11 +56,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5.9vh 6.8vw;
+    padding: 1.5vw 5.95vw;
 }
 
 .logo img {
-    width: 5vw;
+    width: 6vw;
+    margin-left: 0;
 }
 
 span {
@@ -70,6 +69,18 @@ span {
     font-weight: 500;
     color: #FFFFFF;
     white-space: nowrap;
+    font-family: Montserrat;
+
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    width: 110px;
+    height: 18px;
+    margin-left: 7vw;
+    margin-right: 8.5vw;
+
+
 }
 
 #champs-head {
@@ -79,8 +90,8 @@ span {
 }
 
 input[type="search"] {
-    width: 28.392857143vw;
-    height: 2.38vw;
+    width: 28.5vw;
+    height: 2.6vw;
     border-radius: 0.35vw;
     background-image: url("ressources/loupe.svg");
     background-repeat: no-repeat;
@@ -91,6 +102,7 @@ input[type="search"] {
     color: white;
     padding-left: 1vw;
     font-size: 0.9vw;
+    margin-right: 13vw;
 }
 
 #bouton-head {
@@ -100,9 +112,9 @@ input[type="search"] {
 
 .connexion,
 .inscription {
+    height: 2.6vw;
+    padding: 0 1.8vw;
     font-size: 0.9vw;
-    height: 2.38vw;
-    padding: 0 1.5vw;
     border-radius: 0.35vw;
     border: none;
     white-space: nowrap;
@@ -129,32 +141,35 @@ input[type="search"] {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 26.85vw;
+    height: 27vw;
     display: flex;
+    padding-top: 8.5vw;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
 
 #bannière h1 {
-    font-size: 2.85vw;
+    font-size: 3.2vw;
     font-weight: 800;
     text-transform: uppercase;
     color: #152237;
+    margin-top: 0;
     margin-bottom: 0.5vw;
 }
 
 #bannière h2 {
-    font-size: 1.19vw;
-    margin-bottom: 2vw;
+    font-size: 1.2vw;
+    margin-top: 0;
+    margin-bottom: 2.5vw;
     color: #000;
     text-transform: uppercase;
 }
 
 #bannière button {
-    padding: 0.65vw 1.5vw;
-    font-size: 0.9vw;
+    padding: 0.8vw 2vw;
+    font-size: 1vw;
     border: none;
     border-radius: 0.35vw;
     background-color: #ffffff;
@@ -194,7 +209,7 @@ input[type="search"] {
 #title2 {
     font-size: 2.14vw;
     font-weight: 800;
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     color: #152237;
 }
 
@@ -205,7 +220,7 @@ input[type="search"] {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.78vw;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
 }
 
 .text {
@@ -215,9 +230,10 @@ input[type="search"] {
 }
 
 .formation {
-    width: 18.27vw;
+    width: 18.25vw;
     padding: 0.9vw;
     position: relative;
+    flex-shrink: 0;
 }
 
 .formation img {
@@ -307,10 +323,6 @@ input[type="search"] {
     color: #152237;
 }
 
-
-/*
-   Avis
-   */
 #avis {
     display: flex;
     flex-direction: column;
@@ -354,10 +366,6 @@ input[type="search"] {
     margin: 0 0 0.5vw 0;
 }
 
-
-/*
-   SECTION AUTEUR (Vert) & AVANTAGES
-   */
 #author,
 #avantages {
     width: 100%;
@@ -413,7 +421,7 @@ input[type="search"] {
     font-weight: 500;
 }
 
-#author ul li svg,
+#author ul li i,
 #avantages ul li i {
     flex-shrink: 0;
     width: 1.78vw;
@@ -422,7 +430,8 @@ input[type="search"] {
 }
 
 #author i {
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-size: 1.78vw;
 }
 
 #avantages ul li i {
@@ -430,10 +439,6 @@ input[type="search"] {
     color: #44DD8A;
 }
 
-
-/*
-   À PROPOS
-   */
 #à-propos {
     display: flex;
     width: 100%;
@@ -687,12 +692,10 @@ footer ul li {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 796px) {
 
-    /* -- GENERAL -- */
     body {
         font-size: 15px;
-        /* On passe en PX pour que ce soit lisible */
     }
 
     h1,
@@ -701,44 +704,57 @@ footer ul li {
         line-height: 1.2;
     }
 
-    /* -- HEADER -- */
     header {
         padding: 15px 20px;
-        /* Pour garder le burger à droite et logo à gauche */
     }
 
     .logo img {
-        width: 120px;
-        /* Taille fixe */
+
+        width: 84px;
+        height: 31px;
     }
 
-    /* Le Menu Burger apparaît */
+    .connexion,
+    .inscription {
+        display: none;
+    }
+
+    #color {
+        display: none;
+    }
+
+    #ligne {
+        display: none;
+    }
+
     #mobile {
         display: block;
-        /* Ajoute ici ton style pour l'icone burger si besoin */
         font-size: 24px;
         color: white;
     }
 
-    /* On cache le menu desktop */
     #champs-head,
     #bouton-head,
     header span {
         display: none;
     }
 
-    /* -- BANNIERE -- */
     #bannière {
-        height: auto;
-        padding: 60px 20px;
+        height: 364px;
+        background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url("ressources/pexels-polina-zimmerman-3747457\ 1.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
     }
 
     #bannière h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     #bannière h2 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
@@ -748,7 +764,6 @@ footer ul li {
         border-radius: 5px;
     }
 
-    /* -- TITRES SECTIONS -- */
     #title,
     #title2,
     #avis h2,
@@ -761,7 +776,6 @@ footer ul li {
         margin-bottom: 30px;
     }
 
-    /* -- FORMATIONS -- */
     #les-formation,
     #les-formation2 {
         justify-content: center;
@@ -770,23 +784,22 @@ footer ul li {
 
     .formation {
         width: 100%;
-        /* 1 par ligne */
         max-width: 400px;
-        /* Pas trop large non plus */
         margin: 0 auto;
-        /* Petit fond pour détacher du blanc */
         border-radius: 10px;
     }
 
     .prix {
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        height: 31.15px;
+        gap: 7px;
         top: -15px;
-        border-radius: 20px;
+        left: 250px;
+        border-radius: 93px;
     }
 
     .nv-prix p {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .an-prix p {
@@ -808,9 +821,9 @@ footer ul li {
         max-width: 300px;
         height: 45px;
         font-size: 16px;
+        margin-bottom: 54px;
     }
 
-    /* -- AVIS -- */
     .clients {
         flex-direction: column;
         align-items: center;
@@ -834,7 +847,6 @@ footer ul li {
         height: 80px;
     }
 
-    /* -- SECTIONS FLEX (Auteur, Avantages, À Propos) -- */
     #author,
     #avantages,
     #à-propos {
@@ -845,7 +857,6 @@ footer ul li {
 
     #author {
         flex-direction: column-reverse;
-        /* Image en bas ou haut selon goût */
     }
 
     .author-img-wrapper,
@@ -853,6 +864,10 @@ footer ul li {
     #logo2 {
         width: 100%;
         max-width: 350px;
+    }
+
+    .liste-author i {
+        font-size: 18px;
     }
 
     .liste,
@@ -887,6 +902,18 @@ footer ul li {
         font-size: 5.6vw;
     }
 
+    .rating-box i {
+        font-size: 18px;
+        margin-right: 2px;
+    }
+
+    .rating-box {
+        margin: 10px 0;
+        gap: 5px;
+
+    }
+
+
     #propos p {
         font-size: 14px;
     }
@@ -899,23 +926,24 @@ footer ul li {
 
     #name,
     #email {
-        width: 100%;
-        height: 50px;
-        font-size: 16px;
+        width: auto;
+        height: 46px;
+        font-size: 15px;
     }
 
     textarea {
-        width: 100%;
+
         height: 150px;
         margin-top: 15px;
         font-size: 16px;
     }
 
     #submit {
-        width: 100%;
-        height: 50px;
+        height: 45px;
         font-size: 16px;
+        border-radius: 6px
     }
+
 
     /* -- FOOTER -- */
     .fin {
