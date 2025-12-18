@@ -353,6 +353,7 @@ input[type="search"] {
     font-weight: 800;
     margin-bottom: 3vw;
     color: #152237;
+    text-transform: uppercase;
 }
 
 .clients {
