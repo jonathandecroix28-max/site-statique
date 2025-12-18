@@ -166,7 +166,7 @@
             </div>
             <div class="mt-12 flex justify-center w-full md:pr-[100px]">
                 <button
-                    class="bg-klivio-corail text-white px-10 py-3 rounded-md font-bold transition hover:bg-klivio-vin">
+                    class="bg-klivio-corail text-white px-10 py-3 rounded-md font-bold transition hover:bg-klivio-vin cursor-default">
                     Voir plus de formations
                 </button>
             </div>
@@ -277,7 +277,8 @@
                 </div>
             </div>
             <div class="mt-12 flex justify-center w-full md:pr-[100px]">
-                <button class="bg-klivio-corail text-white px-10 py-3 rounded-md font-bold transition hover:opacity-90">
+                <button
+                    class="bg-klivio-corail text-white px-10 py-3 rounded-md font-bold transition hover:opacity-90 cursor-default">
                     Voir plus de formations
                 </button>
             </div>
@@ -382,8 +383,10 @@
                     opportunités d'apprentissage de qualité.
                 </p>
             </div>
-            <div class="bg-klivio-vin w-full md:w-1/2 flex justify-center items-center py-12">
-                <img src="ressources/logo.png" alt="logo" class="w-40 md:w-[20vw] h-auto">
+            <div class="bg-klivio-vin w-full md:w-1/2 flex justify-center items-center py-52 h-[350px] md:h-auto">
+
+                <img src="ressources/logo.png" alt="logo" class="w-[clamp(200px,30vw,350px)] h-auto object-contain">
+
             </div>
         </section>
 
@@ -412,56 +415,79 @@
         </section>
     </main>
 
-    <footer class="bg-klivio-vin w-full text-klivio-white pb-5">
+    <footer class="bg-klivio-vin w-full text-white pb-5">
         <hr class="h-[18px] bg-hr-background border-none">
-        <div class="flex justify-between md:flex-row flex-col items-start w-full px-10 py-7">
-            <div class="mt-4"><img src="ressources/logo.png" alt="logo" class="w-72"></div>
-            <div class="flex md:flex-row flex-col gap-8 text-center">
+
+        <div
+            class="flex flex-col md:flex-row justify-between items-center md:items-start w-full max-w-[1440px] mx-auto px-5 md:px-10 py-10 gap-10">
+
+            <div class="mt-4 shrink-0">
+                <img src="ressources/logo.png" alt="logo" class="w-48 md:w-60 lg:w-72">
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-8 lg:gap-16 text-center md:text-left">
                 <div>
-                    <h3 class="font-bold text-lg mb-1">Mentions légales</h3>
-                    <ul class="flex flex-col items-center">
+                    <h3 class="font-bold text-lg mb-3">Mentions légales</h3>
+                    <ul class="flex flex-col items-center md:items-start gap-2 opacity-90">
                         <li>CGU</li>
                         <li>CGV</li>
                         <li>FAQ</li>
                         <li>Contact</li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="font-bold text-lg mb-1">Coordonnées</h3>
-                    <ul class="flex flex-col items-start gap-1">
+                    <h3 class="font-bold text-lg mb-3">Coordonnées</h3>
+                    <ul class="flex flex-col items-center md:items-start gap-3">
                         <li
-                            class="bg-[url('ressources/localisation.svg')] bg-no-repeat bg-[left_top_5px] bg-[length:18px_18px] pl-8">
-                            1 place république, 75003 Paris</li>
+                            class="bg-[url('ressources/localisation.svg')] bg-no-repeat bg-[left_center] bg-[length:18px_18px] pl-8 leading-snug">
+                            1 place république, 75003 Paris
+                        </li>
                         <li
-                            class="bg-[url('ressources/telephone.svg')] bg-no-repeat bg-[left_center] bg-[length:18px_18px] pl-8">
-                            01.02.03.04.05</li>
+                            class="bg-[url('ressources/telephone.svg')] bg-no-repeat bg-[left_center] bg-[length:18px_18px] pl-8 h-6 flex items-center">
+                            01.02.03.04.05
+                        </li>
                         <li
-                            class="bg-[url('ressources/email.svg')] bg-no-repeat bg-[left_center] bg-[length:18px_18px] pl-8">
-                            contact@klivio.fr</li>
+                            class="bg-[url('ressources/email.svg')] bg-no-repeat bg-[left_center] bg-[length:18px_18px] pl-8 h-6 flex items-center">
+                            contact@klivio.fr
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="hidden md:flex flex-row gap-5 pt-9">
+
+            <div class="hidden md:flex flex-col lg:flex-row gap-4 pt-4 lg:pt-9">
                 <button
-                    class="bg-klivio-action text-white text-[15px] rounded-md px-[25px] py-[11px] cursor-default">Connexion</button>
+                    class="bg-klivio-action text-white text-[15px] rounded-md px-6 py-2.5 whitespace-nowrap hover:brightness-110 transition-all">
+                    Connexion
+                </button>
                 <button
-                    class="bg-hr-background text-white text-[15px] rounded-md px-[25px] py-[11px] cursor-default">Inscription</button>
+                    class="bg-hr-background text-white text-[15px] rounded-md px-6 py-2.5 whitespace-nowrap hover:brightness-110 transition-all">
+                    Inscription
+                </button>
             </div>
         </div>
-        <hr class="hidden md:block bg-hr-background border-0 h-[2px] w-[80%] mx-auto mb-7">
-        <div class="hidden md:flex flex-row justify-between items-center w-[80%] mx-auto mt-4">
-            <p>&copy; Klivio - 2025</p>
-            <div class="flex items-center gap-4">
-                <p>Suivez-nous</p>
-                <div class="flex gap-3">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="ressources/facebook.svg"
-                            title="https://www.facebook.com/" alt="logo facebook"></a>
-                    <a href="https://x.com" target="_blank"><img src="ressources/X.svg" title="https://x.com"
-                            alt="logo x"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="ressources/instagram.svg"
-                            alt="logo instagram" title="https://www.instagram.com"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="ressources/Linkediln.svg"
-                            title="https://www.linkedin.com/" alt="logo linkedin"></a>
+
+        <hr class="hidden md:block bg-hr-background border-0 h-[2px] w-[90%] max-w-[1240px] mx-auto mb-7">
+
+        <div
+            class="hidden md:flex flex-col md:flex-row justify-between items-center w-[90%] max-w-[1240px] mx-auto mt-4 gap-4">
+            <p class="text-sm opacity-80">&copy; Klivio - 2025</p>
+
+            <div class="flex items-center gap-6">
+                <p class="text-sm font-medium">Suivez-nous</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/" target="_blank" class="hover:scale-110 transition-transform">
+                        <img src="ressources/facebook.svg" alt="logo facebook" class="w-6 h-6">
+                    </a>
+                    <a href="https://x.com" target="_blank" class="hover:scale-110 transition-transform">
+                        <img src="ressources/X.svg" alt="logo x" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="hover:scale-110 transition-transform">
+                        <img src="ressources/instagram.svg" alt="logo instagram" class="w-6 h-6">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="hover:scale-110 transition-transform">
+                        <img src="ressources/Linkediln.svg" alt="logo linkedin" class="w-6 h-6">
+                    </a>
                 </div>
             </div>
         </div>
