@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-banner': "linear-gradient(94.01deg, rgba(136, 19, 55, 0.9) 0%, rgba(245, 158, 11, 0.85) 100%), url('./ressources/bg-header.png')",
+        'hero-banner2': "linear-gradient(94.01deg, rgba(136, 19, 55, 0.9) 0%, rgba(245, 158, 11, 0.85) 100%), url('./ressources/pexels-polina-zimmerman-3747457 1.png')",
         'hr-background': "linear-gradient(94.01deg, rgba(251, 113, 133, 0.8) 10%, rgba(245, 158, 11, 0.85) 100%)",
 
       },
