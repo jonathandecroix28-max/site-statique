@@ -52,11 +52,11 @@ i {
 header {
     background-color: #152237;
     width: 100%;
-
+    height: 4.76vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5vw 5.95vw;
+    padding: 0 5.95vw;
 }
 
 .logo img {
@@ -72,8 +72,6 @@ span {
     letter-spacing: -1.5%;
     text-align: center;
     vertical-align: middle;
-    width: 110px;
-    height: 18px;
     margin-left: 7vw;
     margin-right: 8.5vw;
 }
@@ -136,11 +134,10 @@ input[type="search"] {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 27vw;
+    height: 26.79vw;
     display: flex;
-    padding-top: 8.5vw;
+    justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
@@ -163,8 +160,13 @@ input[type="search"] {
 }
 
 #bannière button {
-    padding: 0.8vw 2vw;
-    font-size: 1vw;
+    white-space: nowrap;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.74vw;
+    height: 2.38vw;
     border: none;
     border-radius: 0.35vw;
     background-color: #ffffff;
@@ -179,6 +181,7 @@ input[type="search"] {
 #les-formations-récentes {
     padding: 3vw 5.95vw;
     width: 100%;
+    min-height: 37.62vw
 }
 
 #les-formations-récentes {
@@ -234,24 +237,21 @@ input[type="search"] {
 
 .formation img {
     width: 100%;
-    border-radius: 0.35vw;
+    min-height: 206px;
     width: 305px;
-
     min-width: 250px;
-
 }
 
 
 .image-container {
     position: relative;
     width: 100%;
-
 }
 
 .image-container img {
     width: 100%;
     display: block;
-    border-radius: 0.35vw;
+
 }
 
 .prix {
@@ -346,6 +346,7 @@ input[type="search"] {
     flex-direction: column;
     align-items: center;
     padding: 3vw 10vw;
+    min-height: 35.54vw;
 }
 
 #avis h2 {
@@ -388,6 +389,7 @@ input[type="search"] {
 #author,
 #avantages {
     width: 100%;
+
     min-height: 38.15vw;
     display: flex;
     align-items: center;
@@ -433,7 +435,7 @@ input[type="search"] {
 #avantages ul li {
     display: flex;
     align-items: flex-start;
-    gap: 0.89vw;
+    gap: 2.2vw;
     margin-bottom: 0.89vw;
     font-size: 1.4vw;
     line-height: 1.5;
@@ -446,15 +448,16 @@ input[type="search"] {
     width: 1.78vw;
     height: 1.78vw;
     margin-top: 0.2vw;
+
 }
 
 #author i {
     color: #FFFFFF;
-    font-size: 1.78vw;
+    font-size: 20px;
 }
 
 #avantages ul li i {
-    font-size: 1.78vw;
+    font-size: 20px;
     color: #44DD8A;
 }
 
@@ -470,6 +473,7 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 44.05vw;
 }
 
 #logo2 {
@@ -478,6 +482,7 @@ input[type="search"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 44.05vw;
 }
 
 #logo2 img {
@@ -505,6 +510,7 @@ input[type="search"] {
 #contact {
     padding: 4vw 0;
     text-align: center;
+    min-height: 46.72vw;
 }
 
 #contact h2 {
@@ -529,14 +535,26 @@ input[type="search"] {
     gap: 1vw;
 }
 
+
+#set {
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .input {
     display: flex;
-    gap: 116px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2vw;
 }
+
 
 #name,
 #email {
-    width: 35.7vw;
+    width: 48%;
     height: 2.68vw;
     background-color: #152237;
     border: none;
@@ -545,18 +563,26 @@ input[type="search"] {
     font-size: 0.9vw;
 }
 
-
+#textarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.3vw;
+}
 
 textarea {
-    width: 79vw;
+    width: 100%;
     height: 12vw;
     background-color: #152237;
     border: none;
     color: white;
     padding: 1vw;
     font-size: 0.9vw;
-    margin-top: 3.318452381vw;
+    resize: none;
 }
+
+
+
 
 #submit {
     width: 20.83vw;
@@ -579,6 +605,7 @@ footer {
     width: 100%;
     color: white;
     padding-bottom: 2vw;
+    min-height: 29.11vw
 }
 
 
@@ -725,13 +752,15 @@ footer ul li {
     }
 
     header {
-        padding: 15px 20px;
+        height: 80px;
+        padding: 0px 20px;
     }
 
     .logo img {
 
         width: 84px;
         height: 31px;
+        margin: 0
     }
 
     .connexion,
@@ -763,7 +792,6 @@ footer ul li {
     .image-container img {
         width: 100%;
         display: block;
-        border-radius: 0.35vw;
     }
 
     #champs-head,
@@ -782,6 +810,13 @@ footer ul li {
         padding: 30px 20px;
     }
 
+    #bannière button {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+
     #bannière h1 {
         font-size: 32px;
     }
@@ -791,11 +826,6 @@ footer ul li {
         margin-bottom: 20px;
     }
 
-    #bannière button {
-        padding: 12px 24px;
-        font-size: 14px;
-        border-radius: 5px;
-    }
 
     #title,
     #title2,
@@ -928,6 +958,7 @@ footer ul li {
     #avantages ul li {
         font-size: 14px;
         margin-bottom: 15px;
+        gap: 42px
     }
 
     #author ul li svg,
@@ -973,7 +1004,7 @@ footer ul li {
 
         height: 150px;
         margin-top: 15px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #submit {
